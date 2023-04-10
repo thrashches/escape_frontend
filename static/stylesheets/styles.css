@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar__column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar-logo {
+    height: 100%;
+}
+
+.navbar-menu {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    gap: 39px;
+}
+
+.navbar-menu__item {
+    all: unset;
+    word-wrap: none;
+}
+
+.navbar-menu__item a {
+    text-decoration: none;
+    word-wrap: none;
+}
