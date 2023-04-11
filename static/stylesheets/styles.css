@@ -1,78 +1,78 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 *,
 *:before,
 *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
 :active {
-    outline: none;
+  outline: none;
 }
 
 a:focus,
 a:active {
-    outline: none;
+  outline: none;
 }
 
 nav,
 footer,
 header,
 aside {
-    display: block;
+  display: block;
 }
 
 html,
 input,
 button,
 textarea {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 input::-ms-clear {
-    display: none;
+  display: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
+  padding: 0;
+  border: 0;
 }
 
 a {
-    color: #122ac0;
-    font-weight: 500;
-    text-decoration: none;
+  color: #122ac0;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    overflow-wrap: anywhere;
+  overflow-wrap: anywhere;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 h1,
@@ -81,54 +81,240 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: inherit;
-    font-weight: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 
 .navbar {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 37px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 37px 8px;
 }
 
 .navbar__column {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 50px;
 }
 
 .navbar-logo {
-    height: 100%;
+  height: 100%;
+  transition: 250ms;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1);
 }
 
 .navbar-menu__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navbar-menu {
-    all: unset;
-    display: flex;
-    flex-direction: row;
-    gap: 39px;
-    font-family: 'Open Sans', sans-serif;
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  gap: 39px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .navbar-menu__item {
-    all: unset;
-    word-wrap: none;
-    font-size: 16px;
-    line-height: 140%;
+  all: unset;
+  word-wrap: none;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 400;
+  transition: 250ms;
+}
+
+.navbar-menu__item:hover {
+  transform: scale(1.1);
 }
 
 .navbar-menu__item a {
-    text-decoration: none;
-    word-wrap: none;
-    color: black;
+  text-decoration: none;
+  word-wrap: none;
+  color: #1a1a1a;
+}
+
+.navbar-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.navbar-phone__phone {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1b1936;
+}
+
+.navbar-phone__call {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b6babd;
+}
+
+.navbar-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar-social__link {
+  all: unset;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: " ";
+  display: inline-block;
+  vertical-align: text-bottom;
+  transition: 250ms;
+}
+
+.navbar-social__link:hover {
+  transform: scale(1.1);
+}
+
+.navbar-social__link__vk {
+  background-image: url("../img/svg/vk.svg");
+}
+
+.navbar-social__link__tlg {
+  background-image: url("../img/svg/tlg.svg");
+}
+
+.greeting {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 26px;
+  max-width: 550px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.greeting__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 107.7%;
+  color: #1b1936;
+}
+
+.greeting__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #1a1a1a;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider__card {
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.slider__card__body {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 10px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 200px;
+  height: 46px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 12px;
+  transition: 250ms;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-default {
+  background: #eb8628;
+  color: #ffffff;
+}
+
+.btn-white {
+  background: #ffffff;
+  color: #1b1936;
+}
+
+.slider-btn {
+  width: 100%;
 }

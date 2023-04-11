@@ -1,48 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/stylesheets/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/stylesheets/styles.css" />
     <title>Главная</title>
-</head>
-<body>
-<header>
-    <nav class="navbar">
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar">
         <section class="navbar__column">
-            <div class="navbar-logo__wrapper">
-                <a href="#" class="navbar-logo">
-                    <img src="./static/img/svg/logo.svg" height="100%" width="auto">
-                </a>
-            </div>
-            <div class="navbar-menu__wrapper">
-                <ul class="navbar-menu">
-                    <li class="navbar-menu__item">
-                        <a href="#">Дома</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#">О побегах</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#">Берем в долю</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#">Мероприятия</a>
-                    </li>
-                </ul>
-            </div>
+          <div class="navbar-logo__wrapper">
+            <a href="#" class="navbar-logo">
+              <img src="./static/img/svg/logo.svg" height="100%" width="auto" />
+            </a>
+          </div>
+          <div class="navbar-menu__wrapper">
+            <ul class="navbar-menu">
+              <li class="navbar-menu__item">
+                <a href="#">Дома</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#">О побегах</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#">Берем в долю</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#">Мероприятия</a>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="navbar__column">
-            <div class="navbar-phone">+7 (902) 371-39-00</div>
-            <div class="navbar-social">
-                <div class="navbar-social__link"></div>
-                <div class="navbar-social__link"></div>
-            </div>
+          <div class="navbar-phone">
+            <div class="navbar-phone__phone">+7 (902) 371-39-00</div>
+            <div class="navbar-phone__call">Заказать звонок</div>
+          </div>
+          <div class="navbar-social">
+            <button
+              class="navbar-social__link navbar-social__link__vk"
+            ></button>
+            <button
+              class="navbar-social__link navbar-social__link__tlg"
+            ></button>
+          </div>
         </section>
-    </nav>
-</header>
-<main></main>
-<footer></footer>    
-</body>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="greeting">
+        <h1 class="greeting__header">
+          Скажи, что ты хочешь, и мы скажем где и как это лучше сделать
+        </h1>
+        <p class="greeting__text">
+          Выбери свой вид отдыха и дополнительные услуги.
+        </p>
+        <button class="btn btn-default">Больше о нас</button>
+      </section>
+      <section class="slider">
+        <div class="slider__header">
+          <div class="slider__controls">
+            <div class="slider__controls__btn"></div>
+            <div class="slider__controls__btn"></div>
+            <div
+              class="slider__controls__btn slider__controls__btn__active"
+            ></div>
+            <div class="slider__controls__btn"></div>
+          </div>
+        </div>
+        <div class="slider__body">
+          <div class="slider__card">
+            <div class="slider__card__body" style="background-image: url('./static/img/png/wedding.png');">
+              <button class="btn btn-white slider-btn">Свадьба</button>
+            </div>
+          </div>
+          <div class="slider__card">
+            <div class="slider__card__body" style="background-image: url('./static/img/png/girls.jpg');">
+              <button class="btn btn-white slider-btn">Девичник</button>
+            </div>
+          </div>
+          <div class="slider__card">
+            <div class="slider__card__body" style="background-image: url('./static/img/png/romantic.png');">
+              <button class="btn btn-white slider-btn">Романтический ужин</button>
+            </div>
+          </div>
+          <div class="slider__card">
+            <div class="slider__card__body" style="background-image: url('./static/img/png/ending.jpg');">
+              <button class="btn btn-white slider-btn">Выпускной</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container"></footer>
+  </body>
 </html>
