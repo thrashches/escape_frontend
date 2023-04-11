@@ -245,6 +245,15 @@ h6 {
   color: #1b1936;
 }
 
+.header {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 53px;
+  color: #1b1936;
+}
+
 .greeting__text {
   font-style: normal;
   font-weight: 400;
@@ -256,6 +265,7 @@ h6 {
 .slider {
   display: flex;
   flex-direction: column;
+  margin: 80px 0;
 }
 
 .slider__body {
@@ -281,6 +291,25 @@ h6 {
   flex-direction: column-reverse;
   align-items: center;
   padding: 10px;
+}
+
+.map-section {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.map {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/png/map.jpg");
+  border-radius: 20px;
 }
 
 .btn {
