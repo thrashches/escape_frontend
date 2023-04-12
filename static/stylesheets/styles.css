@@ -90,6 +90,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+}
+
+.p-3 {
+    padding: 30px 0;
+}
+
+.m-3 {
+    margin: 30px 0;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
@@ -124,6 +133,14 @@ body {
     text-align: center;
     max-width: 75%;
     color: #FFFFFF;
+}
+
+.section__header {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 53px;
 }
 
 .container {
@@ -354,6 +371,281 @@ body {
     border-radius: 20px;
 }
 
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    max-width: 280px;
+    max-height: 600px;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 16px rgba(173, 173, 173, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card__img-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card__img-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.card__body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.card__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1B1936;
+}
+
+.options__header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #B6BABD;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.option {
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    background: #ECF1FF;
+    border-radius: 49px;
+    vertical-align: middle;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.capacity {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    text-align: center;
+    color: #1A1A1A;
+}
+
+.price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #1A1A1A;
+}
+
+.text-grey {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ADADAD;
+}
+
+.text-center {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.house__body {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
+}
+
+.house__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.booking__card {
+    max-width: 500px;
+    padding: 32px;
+    min-width: 350px;
+    background: #FFFFFF;
+    box-shadow: 1px 4px 16px rgba(173, 173, 173, 0.22);
+    border-radius: 20px;
+}
+
+.booking__price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1B1936;
+}
+
+.col {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-control {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #878787;
+    border: 1px solid #F0F0F0;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.form-control__date {}
+
+.form-control__date::before {
+    background-image: url('../img/svg/input/calendar.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    color: #1a1a1a;
+    content: " ";
+    vertical-align: middle;
+}
+
+.form-control__date::after {
+    top: 12px;
+    right: 12px;
+    position: absolute;
+    background-image: url('../img/svg/input/arrow-down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    color: #1a1a1a;
+    content: " ";
+    vertical-align: middle;
+}
+
+.form-control__guests {}
+
+.form-control__guests::before {
+    background-image: url('../img/svg/input/ic-users.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    color: #1a1a1a;
+    content: " ";
+    vertical-align: middle;
+}
+
+.gallery {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-top {
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-bottom {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery__picture-wrapper {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery__picture-wrapper img {
+    height: 100%;
+    width: auto;
+    vertical-align: middle;
+    align-content: center;
+}
+
 .footer {
     padding: 40px 0;
     display: flex;
@@ -425,6 +717,10 @@ body {
 
 .btn:hover {
     transform: scale(1.1);
+}
+
+.btn-wide {
+    width: 100%;
 }
 
 .btn-default {
