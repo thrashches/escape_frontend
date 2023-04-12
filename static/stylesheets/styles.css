@@ -312,6 +312,56 @@ h6 {
   border-radius: 20px;
 }
 
+.footer {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__column__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.footer__column__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1b1936;
+  margin: 16px 0;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer__menu__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1a1a1a;
+}
+.copyright {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #b6babd;
+  opacity: 0.6;
+}
+
 .btn {
   display: flex;
   flex-direction: row;
