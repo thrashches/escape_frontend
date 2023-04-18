@@ -487,6 +487,14 @@ body {
   color: #adadad;
 }
 
+.text-bold {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1B1936;
+}
+
 .text-center {
   width: 100%;
   display: flex;
@@ -516,6 +524,39 @@ body {
   background: #ffffff;
   box-shadow: 1px 4px 16px rgba(173, 173, 173, 0.22);
   border-radius: 20px;
+}
+
+.additional__wrapper {
+  padding: 50px 0;
+}
+
+.additional__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  max-width: 600px;
+  min-height: 250px;
+  background: #FFFFFF;
+  box-shadow: 3px 4px 16px rgba(173, 173, 173, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.additional__card__body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  justify-content: space-between;
+  padding: 21px;
+}
+
+.additional__card__img {
+  /* height: 100%; */
+  width: 50%;
+  object-fit: fill;
+  object-position: center;
 }
 
 .booking__price {
@@ -559,8 +600,7 @@ body {
   padding: 12px;
 }
 
-.form-control__date {
-}
+.form-control__date {}
 
 .form-control__date::before {
   background-image: url("../img/svg/input/calendar.svg");
@@ -589,8 +629,7 @@ body {
   vertical-align: middle;
 }
 
-.form-control__guests {
-}
+.form-control__guests {}
 
 .form-control__guests::before {
   background-image: url("../img/svg/input/ic-users.svg");
@@ -853,4 +892,9 @@ body {
 
 .slider-btn {
   width: 100%;
+}
+
+.note::before {
+  display: inline-block;
+  content: "*";
 }
