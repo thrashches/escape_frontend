@@ -1,5 +1,6 @@
 @import "./all_unset.css";
 @import "./navbar.css";
+@import "./service-cards.css";
 
 .p-3 {
   padding: 30px 0;
