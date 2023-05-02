@@ -149,7 +149,9 @@
                 </div>
               </div>
               <div class="row m-3">
-                <button class="btn btn-default btn-wide">Забронировать</button>
+                <button class="btn btn-default btn-wide" onclick="openModal();">
+                  Забронировать
+                </button>
               </div>
               <div class="text-center text-grey">
                 <p>Возвратный залог на все мероприятия составляет 5000 ₽.</p>
@@ -161,9 +163,12 @@
           <h2 class="section__header">К веранде прилагается</h2>
           <div class="additional__wrapper">
             <div class="additional__card">
-              
-                <img class="additional__card__img" src="./static/img/png/add_house.png" alt="" />
-              
+              <img
+                class="additional__card__img"
+                src="./static/img/png/add_house.png"
+                alt=""
+              />
+
               <div class="additional__card__body">
                 <div class="body__item">
                   <h4 class="card__header">Синий Tiny house</h4>
@@ -189,7 +194,7 @@
         <div class="service-cards__wrapper">
           <div class="service-card">
             <div class="service-card__img">
-              <img src="./static/img/png/cards/catering.jpeg" alt="">
+              <img src="./static/img/png/cards/catering.jpeg" alt="" />
             </div>
             <div class="service-card__body">
               <h4 class="card__header">Кейтеринг</h4>
@@ -204,7 +209,7 @@
           </div>
           <div class="service-card">
             <div class="service-card__img">
-              <img src="./static/img/png/cards/catering.jpeg" alt="">
+              <img src="./static/img/png/cards/catering.jpeg" alt="" />
             </div>
             <div class="service-card__body">
               <h4 class="card__header">Фотограф</h4>
@@ -219,7 +224,7 @@
           </div>
           <div class="service-card">
             <div class="service-card__img">
-              <img src="./static/img/png/cards/catering.jpeg" alt="">
+              <img src="./static/img/png/cards/catering.jpeg" alt="" />
             </div>
             <div class="service-card__body">
               <h4 class="card__header">Кейтеринг</h4>
@@ -272,7 +277,7 @@
             <img src="./static/img/svg/logo.svg" height="100%" width="auto" />
           </a>
         </section>
-        <section class="footer__column">
+        <section class="footer__column footer__column__menu">
           <h6 class="footer__column__header">Дома</h6>
           <ul class="footer__menu">
             <li class="footer__menu__item">
@@ -292,7 +297,7 @@
             </li>
           </ul>
         </section>
-        <section class="footer__column">
+        <section class="footer__column footer__column__menu">
           <h6 class="footer__column__header">О побегах</h6>
           <ul class="footer__menu">
             <li class="footer__menu__item">
@@ -303,7 +308,7 @@
             </li>
           </ul>
         </section>
-        <section class="footer__column">
+        <section class="footer__column footer__column__menu">
           <h6 class="footer__column__header">Берем в долю</h6>
           <ul class="footer__menu">
             <li class="footer__menu__item">
@@ -317,7 +322,7 @@
             </li>
           </ul>
         </section>
-        <section class="footer__column">
+        <section class="footer__column footer__column__menu">
           <h6 class="footer__column__header">Мероприятия</h6>
           <ul class="footer__menu">
             <li class="footer__menu__item">
@@ -354,5 +359,152 @@
         </section>
       </nav>
     </footer>
+    <div class="modal-wrapper hidden" id="modal">
+      <section class="modal">
+        <div class="modal__header">
+          <h2>Оформить заказ</h2>
+          <button onclick="closeModal();" class="close"></button>
+        </div>
+        <div class="modal__body">
+          <div class="row-left">
+            <div class="col">
+              <span class="text-grey small">Дата заезда</span>
+              <span>10.12.2022</span>
+            </div>
+            <div class="col">
+              <span class="text-grey small">Вместимость</span>
+              <span>до 6 человек</span>
+            </div>
+          </div>
+          <div class="row-left">
+            <div class="col">
+              <span class="text-grey small">Дата выезда</span>
+              <span>10.12.2022</span>
+            </div>
+            <div class="col">
+              <span class="text-grey small">Дом</span>
+              <span>Дом на острове</span>
+            </div>
+          </div>
+          <div>
+            <h4>Дополнительные услуги</h4>
+            <form action="">
+              <ul class="form-items">
+                <li class="priced__option">
+                  <label for="opt1" class="checkbox__label">
+                    <input
+                      type="checkbox"
+                      name="opt1"
+                      id="opt1"
+                      class="checkbox"
+                    />
+                    <span class="checkbox__fake"></span>
+                    Лесной завтрак
+                  </label>
+                  <span class="checkbox__price">1 500 ₽</span>
+                </li>
+                <li class="priced__option">
+                  <label for="opt2" class="checkbox__label">
+                    <input
+                      type="checkbox"
+                      name="opt2"
+                      id="opt2"
+                      class="checkbox"
+                    />
+                    <span class="checkbox__fake"></span>
+                    Фотограф
+                  </label>
+                  <span class="checkbox__price">1 500 ₽</span>
+                </li>
+                <li class="priced__option">
+                  <label for="opt3" class="checkbox__label">
+                    <input
+                      type="checkbox"
+                      name="opt3"
+                      id="opt3"
+                      class="checkbox"
+                    />
+                    <span class="checkbox__fake"></span>
+                    Кейтеринг
+                  </label>
+                  <span class="checkbox__price">1 500 ₽</span>
+                </li>
+                <li class="priced__option">
+                  <label for="opt4" class="checkbox__label">
+                    <input
+                      type="checkbox"
+                      name="opt4"
+                      id="opt4"
+                      class="checkbox"
+                    />
+                    <span class="checkbox__fake"></span>
+                    Купель на двоих
+                  </label>
+                  <span class="checkbox__price">1 500 ₽</span>
+                </li>
+                <li class="priced__option">
+                  <label for="opt5" class="checkbox__label">
+                    <input
+                      type="checkbox"
+                      name="opt5"
+                      id="opt5"
+                      class="checkbox"
+                    />
+                    <span class="checkbox__fake"></span>
+                    Купель на берегу
+                  </label>
+                  <span class="checkbox__price">1 500 ₽</span>
+                </li>
+                <li class="priced__option">
+                  <label for="opt6" class="checkbox__label">
+                    <input
+                      type="checkbox"
+                      name="opt6"
+                      id="opt6"
+                      class="checkbox"
+                    />
+                    <span class="checkbox__fake"></span>
+                    Кальян
+                  </label>
+                  <span class="checkbox__price">1 500 ₽</span>
+                </li>
+              </ul>
+              <div class="total__frame">
+                <span class="text-grey">К оплате</span>
+                <span class="price">9 000 ₽</span>
+              </div>
+              <ul class="form-items">
+                <li>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Имя"
+                    class="form-control"
+                  />
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Телефон"
+                    class="form-control"
+                  />
+                </li>
+              </ul>
+              <button class="btn btn-default btn-wide">Перейти к оплате</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      const modal = document.getElementById("modal");
+      function openModal() {
+        modal.classList.toggle("hidden", false);
+      }
+      function closeModal(e) {
+        modal.classList.toggle("hidden", true);
+      }
+    </script>
   </body>
 </html>

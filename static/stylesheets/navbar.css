@@ -1,9 +1,19 @@
 .navbar {
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
   padding: 37px 8px;
+}
+
+@media (min-width: 400px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .navbar__column {
@@ -30,10 +40,17 @@
 
 .navbar-menu {
   all: unset;
-  display: flex;
+  display: none;
   flex-direction: row;
   gap: 39px;
   font-family: "Open Sans", sans-serif;
+}
+
+
+@media (min-width: 992px) {
+  .navbar-menu {
+    display: flex;  
+  }
 }
 
 .navbar-menu__item {

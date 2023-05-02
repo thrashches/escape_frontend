@@ -1,6 +1,7 @@
 @import "./all_unset.css";
 @import "./navbar.css";
 @import "./service-cards.css";
+@import "./modal.css";
 
 .p-3 {
   padding: 30px 0;
@@ -77,11 +78,11 @@
   }
 }
 
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
     .container {
       width: 1400px;
     }
-  }
+  } */
 
 .greeting {
   margin: 80px 0;
@@ -126,17 +127,48 @@
 }
 
 .slider__body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  column-gap: 15px;
+  /* flex-direction: row;
+  justify-content: space-between; */
 }
 
 .slider__card {
-  width: 250px;
-  height: 300px;
+  width: 100%;
+  min-height: 500px;
   border-radius: 15px;
   overflow: hidden;
 }
+
+@media (min-width: 768px) {
+  .slider__body {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .slider__card {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slider__body {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .slider__card {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider__body {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
 
 .slider__card__body {
   width: 100%;
@@ -170,14 +202,38 @@
 }
 
 .cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* flex-direction: row;
+  justify-content: space-between; */
   gap: 20px;
 }
 
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card__img-wrapper {
+    height: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .card {
-  max-width: 280px;
+  width: 100%;
   max-height: 600px;
   background: #ffffff;
   box-shadow: 3px 4px 16px rgba(173, 173, 173, 0.15);
@@ -305,8 +361,13 @@
 .house__body {
   padding: 60px 0;
   display: grid;
-  grid-template-columns: 3fr 1fr;
   gap: 50px;
+}
+
+@media (min-width: 768px) {
+  .house__body {
+    grid-template-columns: 3fr 1fr;
+  }
 }
 
 .house__info {
@@ -392,10 +453,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #878787;
+  color: #1b1936;
   border: 1px solid #f0f0f0;
   border-radius: 12px;
   padding: 12px;
+}
+
+.form-control::placeholder {
+  color: #878787;
 }
 
 .form-control__date {
@@ -446,8 +511,14 @@
 .gallery {
   width: 100%;
   height: 400px;
-  display: flex;
+  display: none;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    display: flex;
+  }
 }
 
 .gallery-top {
@@ -493,6 +564,17 @@
   justify-content: space-between;
   align-items: flex-start;
   font-family: "Open Sans", sans-serif;
+}
+
+.footer__column__menu {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .footer__column__menu {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer__column__right {
