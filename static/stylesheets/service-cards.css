@@ -35,7 +35,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: #F6F6F6;;
+  background-color: #f6f6f6;
   overflow: hidden;
   padding: 28px;
 }
@@ -47,4 +47,13 @@
 
 .service-card__list li {
   list-style: disc;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.service-card__price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 98.69%;
 }
