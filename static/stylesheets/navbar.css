@@ -9,6 +9,25 @@
 }
 
 @media (min-width: 400px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
+.menu-mobile {
+  width: 100%;
+}
+
+.navbar-menu__mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 30px;
+  align-items: end;
+  width: 100%;
+}
+
+@media (min-width: 400px) {
   .navbar {
     display: flex;
     flex-direction: row;
