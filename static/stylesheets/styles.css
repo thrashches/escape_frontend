@@ -379,7 +379,7 @@
 .booking__card {
   max-width: 500px;
   padding: 32px;
-  min-width: 350px;
+  min-width: 330px;
   background: #ffffff;
   box-shadow: 1px 4px 16px rgba(173, 173, 173, 0.22);
   border-radius: 20px;
